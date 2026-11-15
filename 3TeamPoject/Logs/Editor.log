@@ -1,0 +1,381 @@
+Built from '6000.5/staging' branch; Version is '6000.5.0f1 (88b47c5e7076) revision 8959100'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 8019 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-15T08:09:06Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bonit" at "2026-11-15T08:09:06.9183274Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.0f1\Editor\Unity.exe
+-projectpath
+C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject
+-acceptSoftwareTermsForThisRunOnly
+-useHub
+-hubIPC
+-cloudEnvironment
+production
+-licensingIpc
+LicenseClient-bonit
+-hubSessionId
+91b27ee7-5235-4ac5-ab3c-f0cb6427d14f
+-accessToken
+QfrYtYNffJ9AxM6lXnaPyBU4Cjk043t5JLTUTfnjDcM00df
+Successfully changed project path to: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject
+C:/Users/bonit/OneDrive/문서/GitHub/3-Team_Project/3TeamPoject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [88292]  Target information:
+
+Player connection [88292]  * "[IP] 192.168.219.104 [Port] 55504 [Flags] 2 [Guid] 3016510072 [EditorId] 3016510072 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-D8KFN3M) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [88292] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [88292] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-14152" after 3.9 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-bonit"
+[Licensing::IpcConnector] LicenseClient-bonit channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-bonit-6000.5.0 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 17444)
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-bonit-6000.5.0, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bonit-6000.5.0" at "2026-11-15T08:09:15.4514145Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 17444, path: "C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              d8fcc687cf284fffad3483ce7a5a4c27
+  Correlation Id:          e7ac5e1a7c638b8692d65212a289efb0
+  External correlation Id: 3073450844295824953
+  Machine Id:              xLEMFRXbvraSggn5nhLo28RRMp8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-bonit-6000.5.0" (connect: 2.02s, validation: 0.85s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bonit-6000.5.0-notifications" at "2026-11-15T08:09:16.3285979Z"
+[Licensing::Module] Connected to LicensingClient (PId: 17444, launch time: 0.02, total connection time: 2.90s)
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token QfrYtYNffJ...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569731397510-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.09
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 9.87s
+[Licensing::Module] Licensing is initialized (took 5.18s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.0f1 (88b47c5e7076)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bonit/OneDrive/문서/GitHub/3-Team_Project/3TeamPoject/Assets
+[D3D12 Device Filter] Vendor Name: NVIDIA
+[D3D12 Device Filter] Device Name: NVIDIA GeForce 940MX
+[D3D12 Device Filter] Driver Version: 32.0.15.8253
+[D3D12 Device Filter] Feature Level: 11.0
+[D3D12 Device Filter] Graphics Memory: 2001 MB
+[D3D12 Device Filter] Processor Count: 4
+[D3D12 Device Filter] Device Type: Discrete
+[D3D12 Device Filter] D3D12 API denied by user filter: {"Feature Level Comparator": Less Than"Feature Level": "12.1", "Device Type:": Do Not Care}
+GfxDevice: creating device client; kGfxThreadingModeThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   NVIDIA
+    VRAM:     2001 MB
+    Driver:   32.0.15.8253
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017746 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.579 seconds
+Domain Reload Profiling: 3824ms
+	BeginReloadAssembly (633ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (17ms)
+	RebuildNativeTypeToScriptingClass (72ms)
+	initialDomainReloadingComplete (329ms)
+	LoadAllAssembliesAndSetupDomain (1176ms)
+		LoadAssemblies (594ms)
+		AnalyzeDomain (874ms)
+			TypeCache.Refresh (870ms)
+				TypeCache.ScanAssembly (823ms)
+	FinalizeReload (1596ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			BeforeProcessingInitializeOnLoad (316ms)
+			ProcessInitializeOnLoadAttributes (349ms)
+			ProcessInitializeOnLoadMethodAttributes (649ms)
+			EditorAssembliesLoaded (3ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 37 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\Library\PackageCache\com.unity.modules.hierarchycore)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.06 seconds
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\bonit\OneDrive\����\GitHub\3-Team_Project\3TeamPoject
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 217.0741ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/bonit/OneDrive/문서/GitHub/3-Team_Project/3TeamPoject
+ExitCode: 0 Duration: 0s396ms
+*** Tundra build success (0.19 seconds), 0 items updated, 178 evaluated
+AssetDatabase: script compilation time: 2.955782s
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.837 seconds
+Domain Reload Profiling: 3668ms
+	BeginReloadAssembly (1084ms)
+		DisableScriptedObjects (99ms)
+		CreateAndSetChildDomain (241ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (74ms)
+	initialDomainReloadingComplete (230ms)
+	LoadAllAssembliesAndSetupDomain (404ms)
+		LoadAssemblies (566ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (6ms)
+			BuildScriptInfoCaches (11ms)
+	FinalizeReload (1843ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			BeforeProcessingInitializeOnLoad (311ms)
+			ProcessInitializeOnLoadAttributes (338ms)
+			ProcessInitializeOnLoadMethodAttributes (340ms)
+			AfterProcessingInitializeOnLoad (51ms)
+		AwakeInstancesAfterBackupRestoration (101ms)
+Starting new worker id: 0 with log in C:/Users/bonit/OneDrive/문서/GitHub/3-Team_Project/3TeamPoject/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=f47cb9448f544f94ebbc88906c638395): Total: 7.524 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2312 ms
+		Asset DB Callback time: managed=72 ms, native=76 ms
+		Scripting: domain reloads=1, domain reload time=2030 ms, compile time=2961 ms, other=69 ms
+		Project Asset Count: scripts=117, non-scripts=87
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 87.372ms
+	ApplyChangesToAssetFolders: 2.723ms
+	Scan: 130.785ms
+	Collect global state as custom dependencies: 14.446ms
+	CategorizeScriptCompilationAssets: 1.828ms
+	ProcessAssetsWithTransientArtifactChanges: 5.904ms
+	CategorizeAssets: 5.028ms
+	CompileScripts: 2961.497ms
+	ImportOutOfDateAssets: 1899.591ms (1855.596ms without children)
+		UnloadImportedAssets: 0.220ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.095ms
+		ImportSchedulerStart: 43.675ms
+	PostProcessAllAssets: 72.272ms
+		MonoPostProcessAllAssets: 72.117ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 32.841ms
+			SyncVS.PostprocessSyncProject 7.564ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.920ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 1.299ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.484ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.468ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.225ms
+	UnloadStreamsBegin: 4.323ms
+	GenerateScriptTypeHashes: 0.640ms
+	GenerateScriptTypeSerializationHashes: 1.386ms
+	Untracked: 2316.420ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Scanning for USB devices : 6.913ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-3TeamPoject
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (0.5 MB). Loaded Objects now: 730.
+Memory consumption went from 206.0 MB to 205.5 MB.
+Total: 21.135100 ms (FindLiveObjects: 0.104000 ms CreateObjectMapping: 0.032500 ms MarkObjects: 20.058800 ms  DeleteObjects: 0.493200 ms)
+
+[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+[LAYOUT] About to save layout C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/bonit/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
+<RI> Initializing input.
+<RI> Input initialized.
+[Project] Loading completed in 33.260 seconds
+	Project init time: 				26.536 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		9.136 seconds
+		Asset Database init time: 		1.278 seconds
+		Global illumination init time: 	0.009 seconds
+		Assemblies load time: 			4.087 seconds
+		Unity extensions init time: 	0.003 seconds
+		Asset Database refresh time: 	7.527 seconds
+	Scene opening time: 			5.826 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1794730180056,"processId":14152,"projectLoad":33.259749500000008,"projectInit":26.5361532,"templateInit":0.0,"packageManagerInit":9.1358572,"assetDatabaseInit":1.2781185,"globalIlluminationInit":0.008946,"assembliesLoad":4.0868962,"unityExtensionsInit":0.0026437,"assetDatabaseRefresh":7.5270119,"sceneOpening":5.8258897}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1794730180057,"processId":14152,"editorVersion":"6000.5.0f1 (88b47c5e7076)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=0cbdfa14da66e9a4a891ee8fd818390b): Total: 0.106 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Dynamic Batching is deprecated and will be removed in a future release. Use GPU Instancing instead. Disable Dynamic Batching in Project Settings > Player > Other Settings to remove this warning.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.PlayerSettingsBatchingWarning:WarnIfDynamicBatchingEnabled ()
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+Created GICache directory at C:/Users/bonit/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.129s, timestamps: [37.633 - 37.762]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated access token: "QfrYtYNf"... (expires: 2026-11-15T10:02:55Z)
+Worker ready: AssetImportWorkerHW0 0
+Asset Pipeline Refresh (id=d7ef6a81aa73e1546921ce7736a78465): Total: 0.018 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+MonoPathRemapper: Attempts to remap: 3366; Successful remaps: 568
+Serialized file version minimum: 23, current 23
+[LAYOUT] About to save layout C:\Users\bonit\OneDrive\문서\GitHub\3-Team_Project\3TeamPoject\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/bonit/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-bonit-6000.5.0-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-bonit-6000.5.0 channel disconnected successfully.
+Shut down.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+abort_threads: Failed aborting id: 0000000000000D64, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000015BB8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000000D64, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000015BB8, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 3824
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1794730204039,"processId":14152,"allocatedMemory":46241948,"memoryLabels":[{"Default":166343},{"Permanent":15516},{"NewDelete":66229},{"Thread":4197560},{"Manager":18373},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":847346},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1256},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":64048},{"Input":42840},{"JobScheduler":256},{"TextLib":10518},{"Mono":48},{"ScriptingNativeRuntime":674964},{"BaseObject":1677137},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":6970},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":9432},{"StaticString":3808},{"Utility":2672338},{"Curl":48},{"PoolAlloc":2168},{"AI":80},{"TypeTree":8869},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":6952},{"WebRequest":7575},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33044496},{"Camera":593},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":1102240},{"CoreStats":13688},{"Identifiers":13536},{"Gui":267608},{"EditorUtility":245232},{"VersionControl":8},{"Undo":931},{"AssetDatabase":504494},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35385},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2892},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}
