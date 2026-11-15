@@ -1,8 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class FriendTower : MonoBehaviour
 {
     public float friend_tower_hp;                      // 타워 체력
+    public GameObject Barrier;
+    public GameObject Laser;
 
     private void FriTower_TakeDamage(float damage)
     {
@@ -33,17 +36,58 @@ public class FriendTower : MonoBehaviour
 
     private void tower_ability_1()
     {
-
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Y))        // 일단 키보드로 사용
+            {
+                Use_Laser();
+            }
+        }
     }
 
     private void tower_ability_2()
     {
-
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
+            {
+                Heal_Our();
+                Debug.Log("아군 힐");
+                Use_Barrier();
+                Debug.Log("베리어 가동");
+            }
+        }
     }
 
     private void tower_ability_3()
     {
 
+    }
+
+    private void Use_Laser()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            Vector2 Spawn_Laser_Pos = new Vector2(i * 1.5f, 0f);
+            GameObject New_Laser_Pos = Instantiate(Laser, Spawn_Laser_Pos, Quaternion.identity);
+        }
+    }
+
+    private void Heal_Our()
+    {
+        Unit.currentHp += 5;
+    }
+
+    private void Use_Barrier()
+    {
+        Instantiate(Barrier, new Vector2((float)9, (float)-5), Quaternion.identity);
+        StartCoroutine(Wait_time(3f));
+        Destroy(Barrier);
+    }
+
+    IEnumerator Wait_time(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 
     void Update()

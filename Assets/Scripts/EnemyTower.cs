@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class EnemyTower : MonoBehaviour
 {
     public float enemy_tower_hp;                       // 타워 체력
+    public GameObject Barrier_Enm;
 
     private void EnmTower_TakeDamage(float damage)
     {
