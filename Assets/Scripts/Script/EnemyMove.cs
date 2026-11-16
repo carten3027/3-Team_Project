@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public float EnemySpeed = 0f;
+    public static float EnemySpeed = 0f;
     void Start()
     {
         

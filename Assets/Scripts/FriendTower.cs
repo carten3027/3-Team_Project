@@ -3,9 +3,22 @@ using UnityEngine;
 
 public class FriendTower : MonoBehaviour
 {
+    private Transform Spwan_Point;
+
     public float friend_tower_hp;                      // 타워 체력
     public GameObject Barrier;
     public GameObject Laser;
+
+    public GameObject Unit_LittleGuardian;
+    public GameObject Unit_ShieldBearer;
+    public GameObject Unit_PrismArcher;
+    public GameObject Unit_NeonLancer;
+    public GameObject Unit_ChromaKnight;
+
+    void Awake()
+    {
+        Spwan_Point = transform.Find("Spwan_Point");
+    }
 
     private void FriTower_TakeDamage(float damage)
     {
@@ -85,9 +98,33 @@ public class FriendTower : MonoBehaviour
         Destroy(Barrier);
     }
 
-    IEnumerator Wait_time(float time)
+    public static IEnumerator Wait_time(float time)
     {
         yield return new WaitForSeconds(time);
+    }
+
+    private void Spawn(string spwan_unit)
+    {
+        if (spwan_unit == "LG")
+        {
+            Instantiate(Unit_LittleGuardian, Spwan_Point.position, Quaternion.identity);
+        }
+        if (spwan_unit == "SB")
+        {
+            Instantiate(Unit_ShieldBearer, Spwan_Point.position, Quaternion.identity);
+        }
+        if (spwan_unit == "PA")
+        {
+            Instantiate(Unit_PrismArcher, Spwan_Point.position, Quaternion.identity);
+        }
+        if (spwan_unit == "NL")
+        {
+            Instantiate(Unit_NeonLancer, Spwan_Point.position, Quaternion.identity);
+        }
+        if (spwan_unit == "CK")
+        {
+            Instantiate(Unit_ChromaKnight, Spwan_Point.position, Quaternion.identity);
+        }
     }
 
     void Update()
