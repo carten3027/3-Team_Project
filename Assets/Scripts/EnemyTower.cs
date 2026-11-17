@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class EnemyTower : MonoBehaviour
 {
+    public FriendTower friendTower;
+    public EnemyMove enemyMove;
+    public Enemy enemy;
+
     private Transform Spwan_Point;
 
     public float enemy_tower_hp;                       // 타워 체력
@@ -24,12 +28,6 @@ public class EnemyTower : MonoBehaviour
     private void EnmTower_TakeDamage(float damage)
     {
         enemy_tower_hp -= damage;
-
-        if (enemy_tower_hp <= 0f)
-        {
-            Debug.Log("적군 타워 사망");
-            Destroy(gameObject);
-        }
     }
 
     private void what_tower_ability()
@@ -52,8 +50,10 @@ public class EnemyTower : MonoBehaviour
     {
         while (true)
         {
-            if (enemy_tower_hp <= 0)
+            if (enemy_tower_hp <= 0f)
             {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
                 break;
             }
             int RAND_VUL = Random.Range(1, 26);
@@ -63,12 +63,12 @@ public class EnemyTower : MonoBehaviour
                 Debug.Log("아군 힐");
                 Use_Barrier();
                 Debug.Log("베리어 가동");
-                FriendTower.Wait_time(1f);
+                friendTower.Wait_time(1f);
             }
             Spawn("MS");
-            FriendTower.Wait_time(0.7f);
+            friendTower.Wait_time(0.7f);
             Spawn("MS");
-            FriendTower.Wait_time(0.7f);
+            friendTower.Wait_time(0.7f);
         }
     }
 
@@ -76,6 +76,12 @@ public class EnemyTower : MonoBehaviour
     {
         while (true)
         {
+            if (enemy_tower_hp <= 0f)
+            {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
+                break;
+            }
             int RAND_VUL = Random.Range(1, 26);
             if (RAND_VUL == 1)
             {
@@ -83,7 +89,7 @@ public class EnemyTower : MonoBehaviour
                 Debug.Log("아군 힐");
                 Use_Barrier();
                 Debug.Log("베리어 가동");
-                FriendTower.Wait_time(1f);
+                friendTower.Wait_time(1f);
             }
 
         }
@@ -91,7 +97,7 @@ public class EnemyTower : MonoBehaviour
 
     private void tower_ability_3()
     {
-        EnemyMove.EnemySpeed += 2;
+        enemyMove.EnemySpeed += 2;
         while (true)
         {
             if (enemy_tower_hp <= 1120)
@@ -100,17 +106,28 @@ public class EnemyTower : MonoBehaviour
             }
         }
         Spawn("Boss");
+        while (true)
+        {
+            if (enemy_tower_hp <= 0f)
+            {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
+                break;
+            }
+        }
     }
 
     private void Heal_Our()
     {
-        Enemy.EnemyHp += 5;
+        
+        enemy.EnemyHp += 5;
+        
     }
 
     private void Use_Barrier()
     {
         Instantiate(Barrier_Enm, new Vector2((float)9, (float)-5), Quaternion.identity);
-        StartCoroutine(FriendTower.Wait_time(3f));
+        StartCoroutine(friendTower.Wait_time(3f));
         Destroy(Barrier_Enm);
     }
 
@@ -142,8 +159,8 @@ public class EnemyTower : MonoBehaviour
         }
     }
 
-    void Update()
-    {
+    //void Update()
+    //{
         
-    }
+    //}
 }

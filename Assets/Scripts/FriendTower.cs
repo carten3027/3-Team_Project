@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class FriendTower : MonoBehaviour
 {
+    public UnitData unitData;
+    public Unit unit;
+
     private Transform Spwan_Point;
 
     public float friend_tower_hp;                      // 타워 체력
@@ -23,12 +26,6 @@ public class FriendTower : MonoBehaviour
     private void FriTower_TakeDamage(float damage)
     {
         friend_tower_hp -= damage;
-
-        if (friend_tower_hp <= 0f)
-        {
-            Debug.Log("아군 타워 사망");
-            Destroy(gameObject);
-        }
     }
 
     private void what_tower_ability()
@@ -51,7 +48,13 @@ public class FriendTower : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.Y))        // 일단 키보드로 사용
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+                break;
+            }
+            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
             {
                 Use_Laser();
             }
@@ -62,6 +65,12 @@ public class FriendTower : MonoBehaviour
     {
         while (true)
         {
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+                break;
+            }
             if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
             {
                 Heal_Our();
@@ -74,7 +83,18 @@ public class FriendTower : MonoBehaviour
 
     private void tower_ability_3()
     {
-
+        unitData.moveSpeed += 2f;
+        unitData.attackDelay = unitData.attackDelay / 2;
+        while (true)
+        {
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+                break;
+            }
+            Unit_spwaner();
+        }
     }
 
     private void Use_Laser()
@@ -88,7 +108,7 @@ public class FriendTower : MonoBehaviour
 
     private void Heal_Our()
     {
-        Unit.currentHp += 5;
+        unit.currentHp += 5;
     }
 
     private void Use_Barrier()
@@ -98,7 +118,7 @@ public class FriendTower : MonoBehaviour
         Destroy(Barrier);
     }
 
-    public static IEnumerator Wait_time(float time)
+    public IEnumerator Wait_time(float time)
     {
         yield return new WaitForSeconds(time);
     }
@@ -127,8 +147,32 @@ public class FriendTower : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Unit_spwaner()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Spawn("LG");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Spawn("SB");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Spawn("PA");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Spawn("NL");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Spawn("CK");
+        }
     }
+
+    //void Update()
+    //{
+        
+    //}
 }

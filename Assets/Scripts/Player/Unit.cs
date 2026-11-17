@@ -5,7 +5,7 @@ public class Unit : MonoBehaviour
     public UnitData unitData;
     public LayerMask enemyLayer;
 
-    public static float currentHp;
+    public float currentHp;
     private float attackTimer;
 
     void Start()

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class TowerManager : MonoBehaviour
 {
+
     public static int user_choosen_tower;
 
     public GameObject Blaster_Tower;
@@ -50,8 +51,8 @@ public class TowerManager : MonoBehaviour
         spwan_enemy_tower();
     }
 
-    void Update()
-    {
+    //void Update()
+    //{
         
-    }
+    //}
 }

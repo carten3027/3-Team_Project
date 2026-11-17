@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float EnemyAtk = 0f;
-    public static float EnemyHp = 0f;
+    public float EnemyHp = 0f;
     public float EnemySpeed = 0f;
     public float Cool = 0f;
     public bool Touch = false;
