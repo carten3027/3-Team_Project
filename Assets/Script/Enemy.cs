@@ -59,4 +59,4 @@ public class Enemy : MonoBehaviour
             Debug.Log(this.gameObject.name + "이/가 " + EnemyAtk + "의 데미지로 공격함");
         }
     }
-}                                                   
+}
