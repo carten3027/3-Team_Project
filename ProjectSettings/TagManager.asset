@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyTower
   - OurTower
+  - Team
   layers:
   - Default
   - TransparentFX
