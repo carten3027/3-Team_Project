@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class TowerManager : MonoBehaviour
 {
 
-    public static int user_choosen_tower;
+    public int user_choosen_tower;
 
     public GameObject Blaster_Tower;
     public GameObject Aegis_Tower_Friend;

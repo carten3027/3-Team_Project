@@ -5,6 +5,7 @@ public class FriendTower : MonoBehaviour
 {
     public UnitData unitData;
     public Unit unit;
+    public TowerManager towerManager;
 
     private Transform Spwan_Point;
 
@@ -23,78 +24,18 @@ public class FriendTower : MonoBehaviour
         Spwan_Point = transform.Find("Spwan_Point");
     }
 
+    private void Start()
+    {
+        if (towerManager.user_choosen_tower == 3)
+        {
+            unitData.moveSpeed += 2f;
+            unitData.attackDelay = unitData.attackDelay / 2;
+        }
+    }
+
     private void FriTower_TakeDamage(float damage)
     {
         friend_tower_hp -= damage;
-    }
-
-    private void what_tower_ability()
-    {
-        switch (TowerManager.user_choosen_tower)
-        {
-            case 1:
-                tower_ability_1();
-                break;
-            case 2:
-                tower_ability_2();
-                break;
-            case 3: 
-                tower_ability_3(); 
-                break;
-        }
-    }
-
-    private void tower_ability_1()
-    {
-        while (true)
-        {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
-            {
-                Use_Laser();
-            }
-        }
-    }
-
-    private void tower_ability_2()
-    {
-        while (true)
-        {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
-            {
-                Heal_Our();
-                Debug.Log("아군 힐");
-                Use_Barrier();
-                Debug.Log("베리어 가동");
-            }
-        }
-    }
-
-    private void tower_ability_3()
-    {
-        unitData.moveSpeed += 2f;
-        unitData.attackDelay = unitData.attackDelay / 2;
-        while (true)
-        {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-            Unit_spwaner();
-        }
     }
 
     private void Use_Laser()
@@ -171,8 +112,45 @@ public class FriendTower : MonoBehaviour
         }
     }
 
-    //void Update()
-    //{
-        
-    //}
+    void Update()
+    {
+        if (towerManager.user_choosen_tower == 1)
+        {
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+            }
+            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
+            {
+                Use_Laser();
+            }
+            Unit_spwaner();
+        }
+        else if (towerManager.user_choosen_tower == 2)
+        {
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+            }
+            if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
+            {
+                Heal_Our();
+                Debug.Log("아군 힐");
+                Use_Barrier();
+                Debug.Log("베리어 가동");
+            }
+            Unit_spwaner();
+        }
+        else if (towerManager.user_choosen_tower == 3)
+        {
+            if (friend_tower_hp <= 0f)
+            {
+                Debug.Log("아군 타워 사망");
+                Destroy(gameObject);
+            }
+            Unit_spwaner();
+        }
+    }
 }

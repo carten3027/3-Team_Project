@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class EnemyTower : MonoBehaviour
 {
     public FriendTower friendTower;
-    public EnemyMove enemyMove;
     public Enemy enemy;
 
     private Transform Spwan_Point;
@@ -25,103 +24,24 @@ public class EnemyTower : MonoBehaviour
         Spwan_Point = transform.Find("Spwan_Point");
     }
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "stage3")
+        {
+            enemy.EnemySpeed += 2;
+            enemy.Cool = enemy.Cool / 2;
+        }
+    }
+
     private void EnmTower_TakeDamage(float damage)
     {
         enemy_tower_hp -= damage;
-    }
-
-    private void what_tower_ability()
-    {
-        if (SceneManager.GetActiveScene().name == "stage1")
-        {
-            tower_ability_1();
-        }
-        if (SceneManager.GetActiveScene().name == "stage2")
-        {
-            tower_ability_2();
-        }
-        if (SceneManager.GetActiveScene().name == "stage3")
-        {
-            tower_ability_3();
-        }
-    }
-
-    private void tower_ability_1()
-    {
-        while (true)
-        {
-            if (enemy_tower_hp <= 0f)
-            {
-                Debug.Log("적군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-            int RAND_VUL = Random.Range(1, 26);
-            if (RAND_VUL == 1)
-            {
-                Heal_Our();
-                Debug.Log("아군 힐");
-                Use_Barrier();
-                Debug.Log("베리어 가동");
-                friendTower.Wait_time(1f);
-            }
-            Spawn("MS");
-            friendTower.Wait_time(0.7f);
-            Spawn("MS");
-            friendTower.Wait_time(0.7f);
-        }
-    }
-
-    private void tower_ability_2()
-    {
-        while (true)
-        {
-            if (enemy_tower_hp <= 0f)
-            {
-                Debug.Log("적군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-            int RAND_VUL = Random.Range(1, 26);
-            if (RAND_VUL == 1)
-            {
-                Heal_Our();
-                Debug.Log("아군 힐");
-                Use_Barrier();
-                Debug.Log("베리어 가동");
-                friendTower.Wait_time(1f);
-            }
-
-        }
-    }
-
-    private void tower_ability_3()
-    {
-        enemyMove.EnemySpeed += 2;
-        while (true)
-        {
-            if (enemy_tower_hp <= 1120)
-            {
-                break;
-            }
-        }
-        Spawn("Boss");
-        while (true)
-        {
-            if (enemy_tower_hp <= 0f)
-            {
-                Debug.Log("적군 타워 사망");
-                Destroy(gameObject);
-                break;
-            }
-        }
     }
 
     private void Heal_Our()
     {
         
         enemy.EnemyHp += 5;
-        
     }
 
     private void Use_Barrier()
@@ -159,8 +79,57 @@ public class EnemyTower : MonoBehaviour
         }
     }
 
-    //void Update()
-    //{
-        
-    //}
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "stage1")
+        {
+            if (enemy_tower_hp <= 0f)
+            {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
+            }
+            int RAND_VUL = Random.Range(1, 26);
+            if (RAND_VUL == 1)
+            {
+                Heal_Our();
+                Debug.Log("아군 힐");
+                Use_Barrier();
+                Debug.Log("베리어 가동");
+                friendTower.Wait_time(1f);
+            }
+            Spawn("MS");
+            friendTower.Wait_time(0.7f);
+            Spawn("MS");
+            friendTower.Wait_time(0.7f);
+        }
+        else if (SceneManager.GetActiveScene().name == "stage2")
+        {
+            if (enemy_tower_hp <= 0f)
+            {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
+            }
+            int RAND_VUL = Random.Range(1, 26);
+            if (RAND_VUL == 1)
+            {
+                Heal_Our();
+                Debug.Log("아군 힐");
+                Use_Barrier();
+                Debug.Log("베리어 가동");
+                friendTower.Wait_time(1f);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "stage3")
+        {
+            if (enemy_tower_hp <= 0f)
+            {
+                Debug.Log("적군 타워 사망");
+                Destroy(gameObject);
+            }
+            if (enemy_tower_hp <= 1120)
+            {
+                Spawn("Boss");
+            }
+        }
+    }
 }
