@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\assets\\aprile\\script\\unitdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\unitdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\UnitData.cs",
+              "RelativeDocumentMoniker": "Assets\\Aprile\\Script\\UnitData.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\UnitData.cs",
+              "RelativeToolTip": "Assets\\Aprile\\Script\\UnitData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T07:28:24.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\Unit.cs",
+              "RelativeDocumentMoniker": "Assets\\Aprile\\Script\\Unit.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\Unit.cs",
+              "RelativeToolTip": "Assets\\Aprile\\Script\\Unit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T07:28:03.317Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
