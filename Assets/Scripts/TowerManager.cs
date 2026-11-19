@@ -31,11 +31,7 @@ public class TowerManager : MonoBehaviour
 
     void spwan_enemy_tower()
     {
-        if (SceneManager.GetActiveScene().name == "stage1")
-        {
-            Instantiate(Aegis_Tower_Enemy, new Vector2((float)-8.38, (float)-4.5), Quaternion.identity);
-        }
-        if (SceneManager.GetActiveScene().name == "stage2")
+        if (SceneManager.GetActiveScene().name == "stage1" || SceneManager.GetActiveScene().name == "stage2")
         {
             Instantiate(Aegis_Tower_Enemy, new Vector2((float)-8.38, (float)-4.5), Quaternion.identity);
         }
@@ -50,9 +46,4 @@ public class TowerManager : MonoBehaviour
         spwan_user_tower();
         spwan_enemy_tower();
     }
-
-    //void Update()
-    //{
-        
-    //}
 }
