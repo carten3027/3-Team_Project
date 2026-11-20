@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3795076851480152775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spwan_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5596288257251087206}
   - component: {fileID: 4437723735071195285}
   - component: {fileID: 368880916216617947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: OverClock_em
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 8984070420393084992}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04975, y: -0.01698, z: 0}
+  m_LocalPosition: {x: 4.5699167, y: -0.8340529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -214,11 +214,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTower
   friendTower: {fileID: 0}
   enemy: {fileID: 0}
-  enemy_tower_hp: 0
+  enemy_tower_hp: 1600
   Barrier_Enm: {fileID: 0}
-  Enm_MonoSlime: {fileID: 0}
-  Enm_ShadowHound: {fileID: 0}
-  Enm_IronGolem: {fileID: 0}
-  Enm_DarkSniper: {fileID: 0}
-  Enm_GearBomber: {fileID: 0}
+  Enm_MonoSlime: {fileID: 8028963776898253664, guid: bab37499d20b9664fbb17457157bdaa8, type: 3}
+  Enm_ShadowHound: {fileID: 3292839657104934262, guid: 7c2c20b1358360b469a8e789eafc519a, type: 3}
+  Enm_IronGolem: {fileID: 973321272155482727, guid: 9ee69dfd3e60a1b4b94be84a20921a22, type: 3}
+  Enm_DarkSniper: {fileID: 2396439136224171125, guid: 6af210c78d9f5e64a83bef81dc1ec357, type: 3}
+  Enm_GearBomber: {fileID: 2514221662026430573, guid: b1cc3b92d7e6fd543ac9b10d2665be46, type: 3}
   Enm_Boss_ArkZero: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7038723979018026345}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spwan_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 5013359842259490571}
   - component: {fileID: 1292078069851683532}
   - component: {fileID: 8798772191231064439}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Blaster_tw
-  m_TagString: Untagged
+  m_TagString: OurTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 7242075540136434833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04975, y: -0.01698, z: 0}
+  m_LocalPosition: {x: 4.5699167, y: -0.8340529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FriendTower
   unitData: {fileID: 0}
   unit: {fileID: 0}
-  towerManager: {fileID: 0}
-  friend_tower_hp: 0
+  towerManager: {fileID: 4870349383783751888, guid: c3cb355958605d143abd1c77f47f7ef6, type: 3}
+  friend_tower_hp: 2000
   Barrier: {fileID: 0}
-  Laser: {fileID: 0}
+  Laser: {fileID: 4558979297809711411, guid: 71d9be5f1d6802745aa16a47befce566, type: 3}
   Unit_LittleGuardian: {fileID: 8539916425169367726, guid: bb29b4dfdaad13542b315aed9dbe5901, type: 3}
   Unit_ShieldBearer: {fileID: 5805543100263727416, guid: 8a9824388786a9543bdeabea7583a064, type: 3}
   Unit_PrismArcher: {fileID: 2883081050977738725, guid: d377eeffb59cb44438fe7b25f0a564d9, type: 3}

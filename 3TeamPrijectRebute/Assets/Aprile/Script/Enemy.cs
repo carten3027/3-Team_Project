@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Team") || collision.gameObject.CompareTag("OurTower"))
+        if (collision.gameObject.CompareTag("Team") || collision.gameObject.CompareTag("OurTower") || collision.gameObject.CompareTag("PlyBarrier"))
         {
             Touch = true;
             CollidingOBJ = collision.gameObject;
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Team") || collision.gameObject.CompareTag("OurTower"))
+        if (collision.gameObject.CompareTag("Team") || collision.gameObject.CompareTag("OurTower") || collision.gameObject.CompareTag("PlyBarrier"))
         {
             Touch = false;
         }

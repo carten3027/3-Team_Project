@@ -41,13 +41,16 @@ public class EnemyTower : MonoBehaviour
 
     private void Heal_Our()
     {
-
-        enemy.EnemyHp += 5;
+        Enemy[] NownEnemys = FindObjectsByType<Enemy>();   // 나온 유닛 모두 감지
+        foreach (Enemy i in NownEnemys)
+        {
+            i.EnemyHp = i.EnemyHp + 5f;
+        }
     }
 
     private void Use_Barrier()
     {
-        GameObject barrierInstance = Instantiate(Barrier_Enm, new Vector2(9f, -5f), Quaternion.identity);
+        GameObject barrierInstance = Instantiate(Barrier_Enm, new Vector2(-9f, -5f), Quaternion.identity);
         Destroy(barrierInstance, 3f);
     }
 
@@ -60,7 +63,7 @@ public class EnemyTower : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "stage3")
         {
             SpawnedEnemy.EnemySpeed += 2f;
-            SpawnedEnemy.Cool /= 2f;
+            SpawnedEnemy.Cool *= 0.5f;
         }
     }
 
@@ -154,9 +157,9 @@ public class EnemyTower : MonoBehaviour
                 if (RAND_VUL == 1)
                 {
                     Heal_Our();
-                    Debug.Log("아군 힐");
+                    Debug.Log("적군 힐");
                     Use_Barrier();
-                    Debug.Log("베리어 가동");
+                    Debug.Log("적군 베리어 가동");
                 }
             }
             else if (SceneManager.GetActiveScene().name == "stage2")
@@ -166,9 +169,9 @@ public class EnemyTower : MonoBehaviour
                 if (RAND_VUL == 1)
                 {
                     Heal_Our();
-                    Debug.Log("아군 힐");
+                    Debug.Log("적군 힐");
                     Use_Barrier();
-                    Debug.Log("베리어 가동");
+                    Debug.Log("적군 베리어 가동");
                 }
             }
             else if (SceneManager.GetActiveScene().name == "stage3")

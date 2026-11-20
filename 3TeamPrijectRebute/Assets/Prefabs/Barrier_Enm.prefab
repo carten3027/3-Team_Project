@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5533236018547173457}
   m_Layer: 9
   m_Name: Barrier_Enm
-  m_TagString: Untagged
+  m_TagString: EnmBarrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

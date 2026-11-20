@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2599503290256253451}
   - component: {fileID: 5646371144955489712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Reach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5296296414770275275}
   - component: {fileID: 2574209205828699540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SlimeImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,12 +193,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8918594376799855063}
-  - component: {fileID: 4032013529398781868}
   - component: {fileID: 1713556759334564093}
   - component: {fileID: 2723388878256895891}
-  m_Layer: 0
+  - component: {fileID: 8983305300667051530}
+  m_Layer: 6
   m_Name: Slime
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 8028963776898253664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.36, y: -2.49, z: 0}
+  m_LocalPosition: {x: -0.81722736, y: 3.0326347, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -220,25 +220,6 @@ Transform:
   - {fileID: 2599503290256253451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4032013529398781868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8028963776898253664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 145c23f9c087bbc42904cef13c11ffec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  EnemyAtk: 15
-  EnemyHp: 80
-  EnemySpeed: 1.2
-  Cool: 2
-  Touch: 0
-  IsAttacking: 0
-  CollidingOBJ: {fileID: 0}
 --- !u!50 &1713556759334564093
 Rigidbody2D:
   serializedVersion: 5
@@ -312,3 +293,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8983305300667051530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028963776898253664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8a47eddd3911641b87795f472a3523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  EnemyAtk: 15
+  EnemyHp: 80
+  EnemySpeed: 1.2
+  Cool: 2
+  Touch: 0
+  IsAttacking: 0
+  CollidingOBJ: {fileID: 0}

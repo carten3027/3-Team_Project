@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6681481039030834313}
   m_Layer: 0
   m_Name: Bearer
-  m_TagString: Untagged
+  m_TagString: Team
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

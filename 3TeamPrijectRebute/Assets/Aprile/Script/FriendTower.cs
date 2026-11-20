@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FriendTower : MonoBehaviour
 {
@@ -28,8 +30,16 @@ public class FriendTower : MonoBehaviour
     {
         if (towerManager.user_choosen_tower == 3)
         {
-            unitData.moveSpeed += 2f;
-            unitData.attackDelay = unitData.attackDelay / 2;
+            Unit[] NownUnits = FindObjectsByType<Unit>();   // 나온 유닛 모두 감지
+
+            if (SceneManager.GetActiveScene().name == "stage3")
+            {
+                foreach (Unit i in NownUnits)
+                {
+                    i.unitData.moveSpeed += 2f;
+                    i.unitData.attackDelay *= 0.5f;
+                }
+            }
         }
     }
 
@@ -155,15 +165,8 @@ public class FriendTower : MonoBehaviour
             Spawn("CK");
         }
     }
-
-    void Update()
+    void towerShoot()
     {
-        if (friend_tower_hp <= 0f)
-        {
-            Debug.Log("아군 타워 사망");
-            Destroy(gameObject);
-        }
-
         if (towerManager.user_choosen_tower == 1)
         {
             if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
@@ -172,7 +175,7 @@ public class FriendTower : MonoBehaviour
             }
             Unit_spwaner();
         }
-        else if (towerManager.user_choosen_tower == 2)
+        if (towerManager.user_choosen_tower == 2)
         {
             if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
             {
@@ -183,9 +186,19 @@ public class FriendTower : MonoBehaviour
             }
             Unit_spwaner();
         }
-        else if (towerManager.user_choosen_tower == 3)
+        if (towerManager.user_choosen_tower == 3)
         {
             Unit_spwaner();
         }
+    }
+
+    void Update()
+    {
+        if (friend_tower_hp <= 0f)
+        {
+            Debug.Log("아군 타워 사망");
+            Destroy(gameObject);
+        }
+        towerShoot();
     }
 }

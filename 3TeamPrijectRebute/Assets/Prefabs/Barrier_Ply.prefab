@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7288426820591628679}
   m_Layer: 8
   m_Name: Barrier_Ply
-  m_TagString: Untagged
+  m_TagString: PlyBarrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

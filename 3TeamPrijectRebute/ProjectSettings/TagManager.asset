@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Laser
+  - Enemy
+  - OurTower
+  - Team
+  - PlyBarrier
+  - EnmBarrier
   layers:
   - Default
   - TransparentFX
@@ -16,7 +21,7 @@ TagManager:
   - Player
   - Barrier_Ply
   - Barrier_Enm
-  - 
+  - Tower
   - 
   - 
   - 
