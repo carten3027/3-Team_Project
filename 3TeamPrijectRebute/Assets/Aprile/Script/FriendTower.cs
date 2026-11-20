@@ -33,35 +33,79 @@ public class FriendTower : MonoBehaviour
         }
     }
 
-    private void FriTower_TakeDamage(float damage)
+    public void FriTower_TakeDamage(float damage)
     {
         friend_tower_hp -= damage;
     }
 
-    private void Use_Laser()
+    private IEnumerator Laser_Use()
     {
-        for (int i = 0; i < 5; i++)
-        {
-            Vector2 Spawn_Laser_Pos = new Vector2(i * 1.5f, 0f);
-            GameObject New_Laser_Pos = Instantiate(Laser, Spawn_Laser_Pos, Quaternion.identity);
-        }
+        // 레이저 한방에 지우기위해 리스트에 저장
+        GameObject l1 = Instantiate(Laser, new Vector2(7.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l2 = Instantiate(Laser, new Vector2(6.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l3 = Instantiate(Laser, new Vector2(5.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l4 = Instantiate(Laser, new Vector2(4.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l5 = Instantiate(Laser, new Vector2(3.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l6 = Instantiate(Laser, new Vector2(2.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l7 = Instantiate(Laser, new Vector2(1.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l8 = Instantiate(Laser, new Vector2(0.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l9 = Instantiate(Laser, new Vector2(-0.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l10 = Instantiate(Laser, new Vector2(-1.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l11 = Instantiate(Laser, new Vector2(-2.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l12 = Instantiate(Laser, new Vector2(-3.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l13 = Instantiate(Laser, new Vector2(-4.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l14 = Instantiate(Laser, new Vector2(-5.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l15 = Instantiate(Laser, new Vector2(-6.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject l16 = Instantiate(Laser, new Vector2(-7.5f, -4f), Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+
+        Destroy(l1); Destroy(l2); Destroy(l3); Destroy(l4); Destroy(l5); Destroy(l6); Destroy(l7); Destroy(l8);
+        Destroy(l9); Destroy(l10); Destroy(l11); Destroy(l12); Destroy(l13); Destroy(l14); Destroy(l15); Destroy(l16);
     }
 
     private void Heal_Our()
     {
-        unit.currentHp += 5;
+        Unit[] NownUnits = FindObjectsByType<Unit>();   // 나온 유닛 모두 감지
+        foreach (Unit i in NownUnits)
+        {
+            i.currentHp = Mathf.Clamp(i.currentHp + 5f, 0f, i.unitData.maxHp);
+        }
     }
 
     private void Use_Barrier()
     {
-        Instantiate(Barrier, new Vector2((float)9, (float)-5), Quaternion.identity);
-        StartCoroutine(Wait_time(3f));
-        Destroy(Barrier);
-    }
-
-    public IEnumerator Wait_time(float time)
-    {
-        yield return new WaitForSeconds(time);
+        GameObject barrierInstance = Instantiate(Barrier, new Vector2(9f, -5f), Quaternion.identity);
+        Destroy(barrierInstance, 3f);
     }
 
     private void Spawn(string spwan_unit)
@@ -114,26 +158,22 @@ public class FriendTower : MonoBehaviour
 
     void Update()
     {
+        if (friend_tower_hp <= 0f)
+        {
+            Debug.Log("아군 타워 사망");
+            Destroy(gameObject);
+        }
+
         if (towerManager.user_choosen_tower == 1)
         {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-            }
             if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
             {
-                Use_Laser();
+                StartCoroutine(Laser_Use());
             }
             Unit_spwaner();
         }
         else if (towerManager.user_choosen_tower == 2)
         {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-            }
             if (Input.GetKeyDown(KeyCode.U))        // 일단 키보드로 사용
             {
                 Heal_Our();
@@ -145,11 +185,6 @@ public class FriendTower : MonoBehaviour
         }
         else if (towerManager.user_choosen_tower == 3)
         {
-            if (friend_tower_hp <= 0f)
-            {
-                Debug.Log("아군 타워 사망");
-                Destroy(gameObject);
-            }
             Unit_spwaner();
         }
     }

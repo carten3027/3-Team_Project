@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FriendTower.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
+              "RelativeDocumentMoniker": "Assets\\Aprile\\Script\\FriendTower.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
+              "RelativeToolTip": "Assets\\Aprile\\Script\\FriendTower.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAewHQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T10:57:00.886Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

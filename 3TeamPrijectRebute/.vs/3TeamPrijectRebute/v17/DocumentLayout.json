@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\",
+  "WorkspaceRootPath": "C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\bonit\\onedrive\\\uBB38\uC11C\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\enemytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\enemytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\bonit\\onedrive\\\uBB38\uC11C\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EnemyTower.cs",
+              "DocumentMoniker": "C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\EnemyTower.cs",
+              "RelativeDocumentMoniker": "Assets\\Aprile\\Script\\EnemyTower.cs",
+              "ToolTip": "C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\EnemyTower.cs",
+              "RelativeToolTip": "Assets\\Aprile\\Script\\EnemyTower.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAgwMIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T06:55:08.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FriendTower.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
+              "DocumentMoniker": "C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
               "RelativeDocumentMoniker": "Assets\\Aprile\\Script\\FriendTower.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
+              "ToolTip": "C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\Assets\\Aprile\\Script\\FriendTower.cs",
               "RelativeToolTip": "Assets\\Aprile\\Script\\FriendTower.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAewHQAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAgwL4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-17T10:57:00.886Z",
               "EditorCaption": ""
