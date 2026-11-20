@@ -209,7 +209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8984070420393084992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18d8d6c016915984684a9fa32615ea0b, type: 3}
+  m_Script: {fileID: 11500000, guid: b5213df257dc75848996b6f0f156d258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTower
   friendTower: {fileID: 0}

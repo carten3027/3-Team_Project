@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\enemytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|c:\\users\\bonit\\onedrive\\\uBB38\uC11C\\github\\3-team_project\\3teamprijectrebute\\assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|C:\\Users\\bonit\\OneDrive\\\uBB38\uC11C\\GitHub\\3-Team_Project\\3TeamPrijectRebute\\assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44F2F065-FB08-9537-8C5D-4DBFC3CA366A}|Assembly-CSharp.csproj|solutionrelative:assets\\aprile\\script\\friendtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Assets\\Aprile\\Script\\FriendTower.cs",
               "ViewState": "AgIAAJAAAAAAAAAAAAAgwL4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T10:57:00.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-17T10:57:00.886Z"
             }
           ]
         }

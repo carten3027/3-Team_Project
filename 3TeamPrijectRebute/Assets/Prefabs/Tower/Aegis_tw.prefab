@@ -178,14 +178,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 765357799792997138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491ec5a82a4b16d4d8f4e9e33b7287a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 690f779eed261fd43a7f02553025c8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FriendTower
   unitData: {fileID: 0}
   unit: {fileID: 0}
-  towerManager: {fileID: 8544451936812203665, guid: c3cb355958605d143abd1c77f47f7ef6, type: 3}
-  friend_tower_hp: 4000
-  Barrier: {fileID: 8049943739278211687, guid: 6588f91a0673eaf4ebd1c448ca0dc1b3, type: 3}
+  towerManager: {fileID: 0}
+  friend_tower_hp: 0
+  Barrier: {fileID: 2219611875376621674, guid: 2f4d831bc55fb434088110a80f79a367, type: 3}
   Laser: {fileID: 0}
   Unit_LittleGuardian: {fileID: 8539916425169367726, guid: bb29b4dfdaad13542b315aed9dbe5901, type: 3}
   Unit_ShieldBearer: {fileID: 5805543100263727416, guid: 8a9824388786a9543bdeabea7583a064, type: 3}
