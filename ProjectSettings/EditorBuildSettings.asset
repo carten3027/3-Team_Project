@@ -15,7 +15,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage Scenes.unity
     guid: f9cf9fab0e627874ab44f146af66baf9
   - enabled: 1
-    path: Assets/Scenes/Fight Scenes.unity
+    path: Assets/Scenes/Stage1.unity
     guid: babc8a3a7eab0704b92459e8f31ba71d
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: 4460419906c18424f80b9a595845dcf3
+  - enabled: 1
+    path: Assets/Scenes/Stage3.unity
+    guid: b21a0a1d0bbbc4840a8df29690b9751f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

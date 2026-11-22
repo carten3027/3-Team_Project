@@ -20,13 +20,13 @@ public class ResourceManager : MonoBehaviour
         upgradeBtn.interactable = (coins >= cost);
     }
 
-    public void UpgradeWallet()
+    public void UpgradeWalle()
     {
-        if (coins < cost) return; 
+        if (coins < cost) return;
 
-        coins -= cost;              
-        maxCoins += 500;            
-        rate += 5f;                 
-        cost = (int)(cost * 1.5f);  
+        coins -= cost;
+        maxCoins += 500;
+        rate += 5f;
+        cost = (int)(cost * 1.5f);
     }
 }

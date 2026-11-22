@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonHoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonHoverEffect: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     Vector3 originalScale;
 
